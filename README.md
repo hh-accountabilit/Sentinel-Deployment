@@ -1,17 +1,13 @@
-# Microsoft Sentinel All In One
+# Microsoft Sentinel One Button Deploy
 
 <p align="center">
 </p>
 
 Microsoft Sentinel All-in-One is aimed at helping customers and partners quickly set up a full-fledged Microsoft Sentinel environment that is ready to use, speeding up deployment and initial configuration tasks in few clicks, saving time and simplifying Microsoft Sentinel setup.
 
-**Version: 2**
-
 There are two versions of Microsoft Sentinel All-in-One, v1 and v2. V1 has two flavors, PowerShell and Azure Resource Manager. V2 only has Azure Resource Manager support for now. This page reflects v2, but you can find the previous version in the [v1](./v1/) folder.
 
-## What does All-in-One do?
-
-Microsoft Sentinel All-in-One automates the following tasks:
+Microsoft Sentinel One Button Deploy automates the following tasks:
 
 - Creates resource group
 - Creates Log Analytics workspace
@@ -32,8 +28,7 @@ Microsoft Sentinel All-in-One automates the following tasks:
     + Microsoft Project
     + Office 365
     + Threat Intelligence Platforms
-- Enables analytics rules (Scheduled and NRT) included in the selected Content Hub solutions, with the ability to filter by severity
-- Enables analytics rules (Scheduled and NRT) that use any of the selected Data connectors, with the ability to filter by severity
+
 
 ## Prerequisites
 
