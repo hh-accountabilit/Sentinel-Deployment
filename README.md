@@ -1,12 +1,5 @@
 # Microsoft Sentinel One Button Deploy
 
-<p align="center">
-</p>
-
-Microsoft Sentinel All-in-One is aimed at helping customers and partners quickly set up a full-fledged Microsoft Sentinel environment that is ready to use, speeding up deployment and initial configuration tasks in few clicks, saving time and simplifying Microsoft Sentinel setup.
-
-There are two versions of Microsoft Sentinel All-in-One, v1 and v2. V1 has two flavors, PowerShell and Azure Resource Manager. V2 only has Azure Resource Manager support for now. This page reflects v2, but you can find the previous version in the [v1](./v1/) folder.
-
 Microsoft Sentinel One Button Deploy automates the following tasks:
 
 - Creates resource group
