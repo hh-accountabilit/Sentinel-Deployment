@@ -31,8 +31,7 @@ Microsoft Sentinel One Button Deploy automates the following tasks:
 
 ## Try it now!
 
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FTools%2FSentinel-All-In-One%2Fv2%2Fazuredeploy.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FTools%2FSentinel-All-In-One%2Fv2%2FcreateUiDefinition.json) 
- 
+[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fhh-accountabilit%2FSentinel-Deployment%2Frefs%2Fheads%2Fmain%2FDeployment%2FazureDeploy.json/createUIDefinitionUri/https%3A%2F%2Fraw.githubusercontent.com%2Fhh-accountabilit%2FSentinel-Deployment%2Frefs%2Fheads%2Fmain%2FDeployment%2FcreateUiDefinition.json) 
 
 ## Supported connectors
 
