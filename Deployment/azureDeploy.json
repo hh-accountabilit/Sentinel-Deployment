@@ -290,7 +290,7 @@
   "properties": {
     "mode": "Incremental",
     "templateLink": {
-      "uri": "https://<your-repo-or-storage-url>/vm.json",
+      "uri": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/Deployment/Templates/vm.json",
       "contentVersion": "1.0.0.0"
     },
     "parameters": {
