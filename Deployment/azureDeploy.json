@@ -139,7 +139,7 @@
             "metadata": {
                 "description": "The location of resources"
             },
-            "defaultValue": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/"
+            "defaultValue": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/Deployment"
         }
     },
     "variables": {},
