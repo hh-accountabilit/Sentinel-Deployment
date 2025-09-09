@@ -680,9 +680,9 @@
             "enableScheduledAlerts": "[steps('analyticsRules').enableScheduledAlerts]",
             "severityLevels": "[steps('analyticsRules').severityLevels]",
             "rgName": "[basics('rgName')]",
-            "vmName": "[parameters('vmSettings').vmName]",
-            "vmSize": "[parameters('vmSettings').vmSize]",
-            "adminPassword": "[parameters('vmSettings').adminPassword]",
-            "osDiskSize": "[parameters('vmSettings').osDiskSize]"
+            "vmName": "[steps('vmSettings').vmName]",
+            "vmSize": "[steps('vmSettings').vmSize]",
+            "adminPassword": "[steps('vmSettings').adminPassword]",
+            "osDiskSize": "[steps('vmSettings').osDiskSize]"
         }
     }
