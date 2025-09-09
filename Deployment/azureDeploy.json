@@ -139,7 +139,7 @@
             "metadata": {
                 "description": "The location of resources"
             },
-            "defaultValue": "https://raw.githubusercontent.com/garybushey/AllInOneGov/main"
+            "defaultValue": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/"
         }
     },
     "variables": {},
@@ -162,7 +162,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/Templates/workspace.json",
+                    "uri": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/Deployment/Templates/workspace.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
@@ -201,7 +201,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/Templates/settings.json",
+                    "uri": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/Deployment/Templates/settings.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
@@ -233,7 +233,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/Templates/dataConnectors.json",
+                    "uri": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/Deployment/Templates/dataConnectors.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
@@ -271,7 +271,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/Templates/solutionsAndAlerts.json",
+                    "uri": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/Deployment/Templates/solutionsAndAlerts.json",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
@@ -304,7 +304,7 @@
   "properties": {
     "mode": "Incremental",
     "templateLink": {
-      "uri": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/Templates/vm.json",
+      "uri": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/Deployment/Templates/vm.json",
       "contentVersion": "1.0.0.0"
     },
     "parameters": {
