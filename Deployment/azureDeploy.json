@@ -31,6 +31,18 @@
             ],
             "defaultValue": "PerGB2018"
         },
+        "vmName": {
+    "type": "string"
+        },
+  "adminUsername": {
+    "type": "string"
+  },
+  "adminPassword": {
+    "type": "secureString"
+  },
+  "vmSize": {
+    "type": "string"
+  },
         "capacityReservation": {
             "type": "int",
             "metadata": {
@@ -127,7 +139,7 @@
             "metadata": {
                 "description": "The location of resources"
             },
-            "defaultValue": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/main"
+            "defaultValue": "https://raw.githubusercontent.com/garybushey/AllInOneGov/main"
         }
     },
     "variables": {},
@@ -280,6 +292,42 @@
                     }
                 }
             }
+        },
+        {
+  "type": "Microsoft.Resources/deployments",
+  "name": "vmDeployment",
+  "apiVersion": "2020-06-01",
+  "resourceGroup": "[parameters('rgName')]",
+  "dependsOn": [
+    "networkInterfaceDeployment"
+  ],
+  "properties": {
+    "mode": "Incremental",
+    "templateLink": {
+      "uri": "https://raw.githubusercontent.com/hh-accountabilit/Sentinel-Deployment/refs/heads/main/Templates/vm.json",
+      "contentVersion": "1.0.0.0"
+    },
+    "parameters": {
+      "vmName": {
+        "value": "[parameters('vmName')]"
+      },
+      "adminUsername": {
+        "value": "[parameters('adminUsername')]"
+      },
+      "adminPassword": {
+        "value": "[parameters('adminPassword')]"
+      },
+      "vmSize": {
+        "value": "[parameters('vmSize')]"
+      },
+      "networkInterfaceId": {
+        "value": "[reference('networkInterfaceDeployment').outputs.networkInterfaceId.value]"
+      },
+      "location": {
+        "value": "[parameters('location')]"
+      }
+    }
+  }
         }
     ],
     "outputs": {
