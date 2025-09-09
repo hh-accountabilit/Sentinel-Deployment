@@ -129,6 +129,18 @@
         "enableDiagnostics": {
             "type": "bool"
         },
+          "vmName": {
+            "type": "string"
+        },
+          "adminUsername": {
+            "type": "string"
+        },
+          "adminPassword": {
+            "type": "secureString"
+        },
+          "vmSize": {
+           "type": "string"
+         },
         "enableMLAlerts": {
             "type": "bool",
             "metadata": {
@@ -267,6 +279,43 @@
                 }
             }
         },
+        {
+  "type": "Microsoft.Resources/deployments",
+  "name": "vmDeployment",
+  "apiVersion": "2020-06-01",
+  "resourceGroup": "[parameters('rgName')]",
+  "dependsOn": [
+    "networkInterfaceDeployment"
+  ],
+  "properties": {
+    "mode": "Incremental",
+    "templateLink": {
+      "uri": "https://<your-repo-or-storage-url>/vm.json",
+      "contentVersion": "1.0.0.0"
+    },
+    "parameters": {
+      "vmName": {
+        "value": "[parameters('vmName')]"
+      },
+      "adminUsername": {
+        "value": "[parameters('adminUsername')]"
+      },
+      "adminPassword": {
+        "value": "[parameters('adminPassword')]"
+      },
+      "vmSize": {
+        "value": "[parameters('vmSize')]"
+      },
+      "networkInterfaceId": {
+        "value": "[reference('networkInterfaceDeployment').outputs.networkInterfaceId.value]"
+      },
+      "location": {
+        "value": "[parameters('location')]"
+      }
+    }
+  }
+},
+
         {
             "condition": "[or(not(empty(parameters('enableSolutions1P'))),not(empty(parameters('enableSolutionsEssentials'))),not(empty(parameters('enableSolutionsTraining'))))]",
             "name": "enableSolutionsAndAlerts",
