@@ -29,13 +29,6 @@
             },
             "defaultValue": ""
         },
-        "enableAlerts": {
-            "type": "bool",
-            "metadata": {
-                "description": "whether to enable scheduled analytic rules or not"
-            },
-            "defaultValue": false
-        },
         "severityLevels": {
             "type": "string"
         },
